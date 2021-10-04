@@ -1,0 +1,16 @@
+server:
+  port: 9090
+
+spring:
+
+  thymeleaf:
+    cache: false
+
+  datasource:
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+
+    hikari:
+      auto-commit: true
+      username: springboot_study
+      password: springboot_study
+      jdbc-url: jdbc:log4jdbc:postgresql://localhost:5432/springboot_study
